@@ -8,7 +8,7 @@ import listingRouter from './routes/listing.js'
 import cors from "cors"
 
 app.use(cors({
-    origin: "https://elegant-estate.vercel.app/",
+    origin: "https://elegantestate.vercel.app/",
     methods: ["POST", "GET", "DELETE"],
     credentials: true
 }))
