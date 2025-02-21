@@ -13,7 +13,7 @@ export default function OAuth() {
       const provider = new GoogleAuthProvider();
       const auth = getAuth(app);
       const result = await signInWithPopup(auth, provider); 
-      const res = await fetch('/api/auth/google',{
+      const res = await fetch('https://elegant-estate.vercel.app/api/auth/google',{
         method: 'POST',
         headers: {
             'content-type': 'application/json'
