@@ -5,6 +5,14 @@ import authRouter from './routes/auth.js'
 import dotenv  from 'dotenv';
 import cookieParser from 'cookie-parser';
 import listingRouter from './routes/listing.js'
+import cors from "cors"
+
+app.use(cors({
+    origin: "https://elegantestate.vercel.app/",
+    methods: ["POST", "GET", "DELETE"],
+    credentials: true
+}))
+
 
 dotenv.config();
 
